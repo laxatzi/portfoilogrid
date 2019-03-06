@@ -12,3 +12,7 @@ body {
 .bg-black {
   background-color: #000;
 }
+
+.header-box {
+  height: 200px;
+}
