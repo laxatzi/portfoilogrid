@@ -41,20 +41,20 @@
                  Experienced Full Stack Web Developer
                </div>
         <!--Port header -->     
-               <div class="d-flex flex-row text-white text-center port-header align-items-stretch">
-                  <div class="bg-primary p-4 port-item" data-target="#home" data-toggle="collapse" >
+               <div class="d-flex flex-row text-white text-center port-header align-items-stretch" id="port-header">
+                  <div class="bg-primary p-4 port-item" data-target="#home-section" data-toggle="collapse" data-parent="#port-header" >
                     <i class="fas fa-home d-block fa-2x"></i>
                     <span class="d-none d-sm-block">Home</span>
                   </div>
-                  <div class="bg-success p-4 port-item" data-toggle="collapse" data-target="#resume">
+                  <div class="bg-success p-4 port-item" data-toggle="collapse" data-target="#resume-section" data-parent="#port-header">
                     <i class="fas fa-graduation-cap fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Resume</span>
                   </div>
-                  <div class="bg-warning p-4 port-item" data-toggle="collapse" data-target="#work">
+                  <div class="bg-warning p-4 port-item" data-toggle="collapse" data-target="#work-section" data-parent="#port-header">
                     <i class="fas fa-folder-open fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Work</span>
                   </div>
-                  <div class="bg-danger p-4 port-item" data-toggle="collapse" data-target="#contact">
+                  <div class="bg-danger p-4 port-item" data-toggle="collapse" data-target="#contact-section" data-parent="#port-header">
                     <i class="fas  fa-envelope fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Contact</span>
                   </div>
@@ -67,15 +67,15 @@
         </header>
   <!-- Home section -->
         <div id="home-section" class="collapse show">
-           <div class="card card-body text-white bg-primary py-5">
+           <div class="card card-body text-white bg-primary p-5">
              <h2>Welcome to my page!</h2>
              <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam unde facilis dicta.</p>
            </div>
           <!--second card -->
         </div> 
   <!--Resume section -->
-       <div id="resume-section " class="collapse">
-         <div class="card card-body text-white bg-success py-5">
+       <div id="resume-section" class="collapse">
+         <div class="card card-body text-white bg-success p-5">
            <h2>My Resume</h2>
            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quidem.</p>
          </div>
@@ -83,7 +83,7 @@
        </div>
   <!--Work section -->
        <div id="work-section" class="collapse">
-          <div class="card card-body text-white bg-warning py-5">
+          <div class="card card-body text-white bg-warning p-5">
             <h2>My Work</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatibus eveniet?</p>
           </div>
@@ -91,7 +91,7 @@
        </div>
   <!--Contact section -->
        <div id="contact-section" class="collapse">
-         <div class="card card-body text-white bg-danger py-5">
+         <div class="card card-body text-white bg-danger p-5">
              <h2>Contact me</h2>
              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, sequi!</p>
          </div>
