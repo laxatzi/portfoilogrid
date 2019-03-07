@@ -42,19 +42,19 @@
                </div>
         <!--Port header -->     
                <div class="d-flex flex-row text-white text-center port-header align-items-stretch" id="port-header">
-                  <div class="bg-primary p-4 port-item" data-target="#home-section" data-toggle="collapse" data-parent="#port-header" >
+                  <div class="bg-primary p-4 port-item" data-target="#home-section" data-toggle="collapse"  >
                     <i class="fas fa-home d-block fa-2x"></i>
                     <span class="d-none d-sm-block">Home</span>
                   </div>
-                  <div class="bg-success p-4 port-item" data-toggle="collapse" data-target="#resume-section" data-parent="#port-header">
+                  <div class="bg-success p-4 port-item" data-toggle="collapse" data-target="#resume-section" >
                     <i class="fas fa-graduation-cap fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Resume</span>
                   </div>
-                  <div class="bg-warning p-4 port-item" data-toggle="collapse" data-target="#work-section" data-parent="#port-header">
+                  <div class="bg-warning p-4 port-item" data-toggle="collapse" data-target="#work-section" >
                     <i class="fas fa-folder-open fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Work</span>
                   </div>
-                  <div class="bg-danger p-4 port-item" data-toggle="collapse" data-target="#contact-section" data-parent="#port-header">
+                  <div class="bg-danger p-4 port-item" data-toggle="collapse" data-target="#contact-section" >
                     <i class="fas  fa-envelope fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Contact</span>
                   </div>
@@ -66,7 +66,7 @@
           </div>
         </header>
   <!-- Home section -->
-        <div id="home-section" class="collapse show">
+        <div id="home-section" class="collapse show" data-parent="#port-header">
            <div class="card card-body text-white bg-primary p-5">
              <h2>Welcome to my page!</h2>
              <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam unde facilis dicta.</p>
@@ -74,7 +74,7 @@
           <!--second card -->
         </div> 
   <!--Resume section -->
-       <div id="resume-section" class="collapse">
+       <div id="resume-section" class="collapse" data-parent="#port-header">
          <div class="card card-body text-white bg-success p-5">
            <h2>My Resume</h2>
            <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, quidem.</p>
@@ -82,7 +82,7 @@
          <!--second card -->
        </div>
   <!--Work section -->
-       <div id="work-section" class="collapse">
+       <div id="work-section" class="collapse" data-parent="#port-header">
           <div class="card card-body text-white bg-warning p-5">
             <h2>My Work</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatibus eveniet?</p>
@@ -90,7 +90,7 @@
           <!--second card -->
        </div>
   <!--Contact section -->
-       <div id="contact-section" class="collapse">
+       <div id="contact-section" class="collapse" data-parent="#port-header">
          <div class="card card-body text-white bg-danger p-5">
              <h2>Contact me</h2>
              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, sequi!</p>
@@ -109,6 +109,11 @@
 <script>
     // copyright year updater
     $('#year').text(new Date().getFullYear());
+
+    //init collapse for accordion
+    $('.port-item').click(function () {
+      $('.collapse').collapse('hide');
+    });
 </script>
 </body>
 </html>
