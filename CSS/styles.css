@@ -29,7 +29,9 @@ header {
     opacity: .8;
     cursor: pointer;
 }
-
+.card-header {
+  height: 15rem;
+}
 /* Custom styles */
 .bg-black {
   background-color: #000;
